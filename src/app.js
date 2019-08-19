@@ -77,4 +77,4 @@ apiRouter.route('/details/:id').get(function (req, res) {
 })
 app.use('/api', apiRouter)
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
