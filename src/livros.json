@@ -1,72 +1,221 @@
 [{
     "id": "1",
-    "livro": "O pequeno príncipe EDITADO ISBN - Edição de bolso",
+    "livro": "O pequeno príncipe - Edição de bolso",
     "isbn": 1234533390123,
     "autor": "Harper Collins",
     "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "ano": 2010,
+    "idioma": "Português",
+    "peso": "300g",
+    "dimensoes": "27 x 14 x 1"
 },
 {
     "id": "2",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "livro": "O historiador",
+    "isbn": 9788573029932,
+    "autor": "Elizabeth Kostova",
+    "editora": "Ponto de leitura",
+    "ano": 2009,
+    "idioma": "Português",
+    "peso": "680 g",
+    "dimensoes": "17 x 12 x 4,6 cm"
 },
 {
     "id": "3",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "livro": "Beren e Lúthien",
+    "isbn": 9788595083660,
+    "autor": "J. R. R. Tolkien",
+    "editora": "Harper Collins",
+    "ano": 2018,
+    "idioma": "Português",
+    "peso": "590 g",
+    "dimensoes": "21,4 x 14 x 2,6 cm"
 },
 {
     "id": "4",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "livro": "O Silmarillion",
+    "isbn": 9788595084377,
+    "autor": "J. R. R. Tolkien",
+    "editora": "Harper Collins",
+    "ano": 2019,
+    "idioma": "Português",
+    "peso": "490 g",
+    "dimensoes": "21,2 x 13,8 x 2,8 cm"
 },
 {
     "id": "5",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "livro": "Os segredos da mente milionária",
+    "isbn": 9788575422397,
+    "autor": "T. Harv Eker",
+    "editora": "Editora Sextante",
+    "ano": 2006,
+    "idioma": "Português",
+    "peso": "204 g",
+    "dimensoes": "20,8 x 13,8 x 1,2 cm"
 },
 {
     "id": "6",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "livro": "Pai rico, pai pobre 20 anos",
+    "isbn": 9788550801483,
+    "autor": "Robert Kiyosaki",
+    "editora": "Alta Books",
+    "ano": 2017,
+    "idioma": "Português",
+    "peso": "522 g",
+    "dimensoes": "23,8 x 17 x 1,8 cm"
 },
 {
     "id": "7",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "livro": "Akira - Volume 4",
+    "isbn": 9788545711513,
+    "autor": "Katsuhiro Otomo",
+    "editora": "JBC",
+    "ano": 2019,
+    "idioma": "Português",
+    "peso": "680 g",
+    "dimensoes": "23,8 x 17 x 1,8 cm"
 },
 {
     "id": "8",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
+    "livro": "O Preço da Desonra. Kubidai Hikiukenin",
+    "isbn": 9788593695322,
+    "autor": "Hiroshi Hirata",
+    "editora": "Pipoca e Nanquim",
+    "ano": 2019,
+    "idioma": "Português",
+    "peso": "680 g",
+    "dimensoes": "23,8 x 17 x 1,8 cm"
 },
 {
     "id": "9",
-    "livro": "O pequeno príncipe - Edição de bolso",
-    "isbn": 1234567890123,
-    "autor": "Harper Collins",
-    "editora": "Antoine de Saint-Exupéry",
-    "ano": 2011
-}]
+    "livro": "Conan, O Bárbaro - Livro 3",
+    "isbn": 9788593695315,
+    "autor": "Robert E. Howard",
+    "editora": "Pipoca e Nanquim",
+    "ano": 2019,
+    "idioma": "Português",
+    "peso": "680 g",
+    "dimensoes": "23,8 x 17 x 1,8 cm"
+},
+{
+    "id": "10",
+    "livro": "Me Poupe!: 10 passos para nunca mais faltar dinheiro no seu bolso",
+    "isbn": 9788543105819,
+    "autor": "Nathalia Arcuri",
+    "editora": "Editora Sextante",
+    "ano": 2018,
+    "idioma": "Português",
+    "peso": "290 g",
+    "dimensoes": "22,8 x 15,6 x 1,2 cm"
+},
+{
+    "id": "11",
+    "livro": "Um amor para recordar",
+    "isbn": 9788580419818,
+    "autor": "Nicholas Sparks",
+    "editora": "Editora Arqueiro",
+    "ano": 2019,
+    "idioma": "Português",
+    "peso": "599 g",
+    "dimensoes": "23 x 15,6 x 1 cm"
+},
+{
+    "id": "12",
+    "livro": "Ponto de inflexão",
+    "isbn": 9788593156830,
+    "autor": "Flávio Augusto Da Silva",
+    "editora": "Buzz Editora",
+    "ano": 2019,
+    "idioma": "Português",
+    "peso": "381 g",
+    "dimensoes": "22,8 x 15,6 x 1,4 cm"
+},
+{
+    "id": "13",
+    "livro": "Geração de Valor - Volume 1: Compartilhando Inspiração",
+    "isbn": 9788543101620,
+    "autor": "Flávio Augusto Da Silva",
+    "editora": "Editora Sextante",
+    "ano": 2014,
+    "idioma": "Português",
+    "peso": "408 g",
+    "dimensoes": "23 x 16 x 1,8 cm"
+},
+{
+    "id": "14",
+    "livro": "Do zero ao milhão",
+    "isbn": 9788593156076,
+    "autor": "Carlos Wizard Martins",
+    "editora": "Editora Sextante",
+    "ano": 2017,
+    "idioma": "Português",
+    "peso": "322 g",
+    "dimensoes": "23 x 15,8 x 1,2 cm"
+},
+{
+    "id": "15",
+    "livro": "Coleção Harry Potter - 7 volumes",
+    "isbn": 9788532512949,
+    "autor": "J.K. Rowling",
+    "editora": "Rocco",
+    "ano": 2015,
+    "idioma": "Português",
+    "peso": "3400 g",
+    "dimensoes": "21,8 x 19,2 x 14,2 cm"
+},
+{
+    "id": "16",
+    "livro": "Harry Potter e a Criança Amaldiçoada - Parte Um e Dois",
+    "isbn": 9788532512949,
+    "autor": "J.K. Rowling",
+    "editora": "Rocco",
+    "ano": 2016,
+    "idioma": "Português",
+    "peso": "417 g",
+    "dimensoes": "22,8 x 15,6 x 2 cm"
+},
+{
+    "id": "17",
+    "livro": "Nimona",
+    "isbn": 9788580579024,
+    "autor": "Noelle Stevenson",
+    "editora": "Intrínseca",
+    "ano": 2016,
+    "idioma": "Português",
+    "peso": "581 g",
+    "dimensoes": "22,8 x 15 x 1,8 cm"
+},
+{
+    "id": "18",
+    "livro": "O Árabe do Futuro 3. Uma Juventude no Oriente Médio. 1985-1987",
+    "isbn": 9788551001837,
+    "autor": "Riad Sattouf",
+    "editora": "Intrínseca",
+    "ano": 2017,
+    "idioma": "Português",
+    "peso": "322 g",
+    "dimensoes": "23,8 x 16,8 x 1 cm"
+},
+{
+    "id": "19",
+    "livro": "A revolução dos bichos: Um conto de fadas",
+    "isbn": 9788535909555,
+    "autor": "George Orwell",
+    "editora": "Companhia das Letras",
+    "ano": 2007,
+    "idioma": "Português",
+    "peso": "227 g",
+    "dimensoes": "20,6 x 13,6 x 1,2 cm"
+},
+{
+    "id": "19",
+    "livro": "O homem mais rico da Babilônia",
+    "isbn": 9788595081536,
+    "autor": "George S Clason",
+    "editora": "Harper Collins",
+    "ano": 2017,
+    "idioma": "Português",
+    "peso": "209 g",
+    "dimensoes": "20,8 x 13,6 x 1 cm"
+}
+]

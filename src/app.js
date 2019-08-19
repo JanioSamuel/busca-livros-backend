@@ -1,5 +1,6 @@
 const express = require('express')
 const apiRouter = express.Router()
+const cors = require('cors')
 const bodyParser = require('body-parser')
 const app = express()
 
@@ -7,59 +8,62 @@ const livros = require("./livros.json")
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors())
 
 apiRouter.get('/', (req, res) => {
     res.json({ message: 'Api criada' })
 })
 
 apiRouter.route('/livros').get(function (req, res) {
-    let elm = {
-        "totalElements": livros.length
-    }
-    livros.push(elm)
     res.send(livros)
 })
 
-apiRouter.route('/p').get(function (req, res) {
-    if(req.query.find) {
-        let find = req.query.find.toLowerCase()
-        let values = []
-        livros.forEach(element => {
-            let isbnValue = element['isbn'].toString().toLowerCase()
-            let authorValue = element['autor'].toLowerCase()
-            let titleValue = element['livro'].toLowerCase()
-            if(isbnValue.includes(find) || authorValue.includes(find) || titleValue.includes(find)) {
-                values.push(element)
-            }
-        });
-        let elm = {
-            "totalElements": values.length
-        }
-        values.push(elm)
-        res.send(values)
-    }
-})
 
 apiRouter.route('/filter').post(function (req, res) {
     if(req.body) {
-        let datIni = req.body.datIni
-        let datFim = req.body.datFim
+        let datIni = req.body.datIni != null ? req.body.datIni : null
+        let datFim = req.body.datFim != null ? req.body.datFim : null
+        let search = req.body.search != null ? req.body.search : null
         let values = []
         livros.forEach(element => {
             let year = element['ano'].toString()
-            if(year >= datIni && year <= datFim) {
+            if(datIni != null && datFim != null && year >= datIni && year <= datFim) {
                 values.push(element)
             }
         });
-        let elm = {
-            "totalElements": values.length
+        if(values.length > 0) {
+            values.map(function(e) {
+                let arr = getValuesFromSearch(e, search);
+                if(arr != undefined) {
+                    values = []
+                    values.push(arr)
+                }
+            })
+        } else {
+            livros.forEach(e => {
+                values.push(getValuesFromSearch(e, search))
+            })
         }
-        values.push(elm)
-        res.send(values)
+        
+        res.send(removeUndefinedValues(values))
     }
 })
 
-
+function removeUndefinedValues(element) {
+    return element.filter(function (el) {
+        return el != null;
+      });
+}
+function getValuesFromSearch(e, search) {
+    if(search != null) {
+        let isbnValue = e['isbn'].toString().toLowerCase()
+        let authorValue = e['autor'].toLowerCase()
+        let titleValue = e['livro'].toLowerCase()
+        if(isbnValue.includes(search) || authorValue.includes(search.toLowerCase()) || titleValue.includes(search.toLowerCase())) {
+            return e;
+        }
+    }
+}
 apiRouter.route('/details/:id').get(function (req, res) {
     if(req.params) {
         let id = req.params.id
